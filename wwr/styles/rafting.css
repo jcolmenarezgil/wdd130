@@ -1,0 +1,105 @@
+
+:root {
+    /* Color Schema */
+    --primary-color: #F6CF26;
+    --secondary-color: #1C9CC5;
+    --accent-1-color: #FF584D;
+    --accent-2-color: #C8AE84;
+
+    /* RGBA */
+    --primary-background: rgba(246, 207, 38, 0.8);
+    --secondary-background: rgba(28, 156, 197, 0.7);
+
+    /* Complementary */
+    --black-tone: #000000;
+    --white-tone: #FFFFFF;
+    
+    /* Typography: Heading */
+    --heading-font-family: "Racing Sans One", serif;
+    --heading-font-weight: 400;
+    
+    /* Typography: Body */
+    --body-font-family: "Roboto", serif;
+}
+
+* {
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    max-width: 1024px;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--heading-font-family);
+    font-weight: var(--heading-font-weight);
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--black-tone);
+}
+
+p, nav a {
+    font-family: var(--body-font-family);
+    font-weight: 400;
+    font-style: normal;
+
+}
+
+/* hero */
+
+.hero {
+    position: relative;
+}
+
+.hero > img {
+    width: 100%;
+    display: block;
+    height: auto;
+
+}
+.hero h1 {
+    position: absolute;
+    left: 50%;
+    top: -50%;
+    transform: translate(-50%, -150%);
+    display: block;
+    width: 100%;
+    text-align: center;
+    background-color: var(--primary-background);
+}
+
+/* hero article */
+
+.hero article {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%);
+    width: 100%;
+    background-color: var(--secondary-background);
+    backdrop-filter: blur(10px);
+}
+
+.hero article p {
+    padding: 15px;
+    clear: none;
+    color: var(--white-tone);
+}
+
+.hero article img {
+    float: right;
+    padding: 5px;
+}
+
+/* footer */
+
+footer nav a img {
+    width: 48px;
+    height: auto;
+}
