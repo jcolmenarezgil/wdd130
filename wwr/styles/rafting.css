@@ -65,8 +65,8 @@ p, nav a {
 }
 .hero h1 {
     position: absolute;
+    top: 35%;
     left: 50%;
-    top: -50%;
     transform: translate(-50%, -150%);
     display: block;
     width: 100%;
@@ -81,7 +81,7 @@ p, nav a {
     left: 50%;
     top: 50%;
     transform: translate(-50%);
-    width: 100%;
+    width: 80%;
     background-color: var(--secondary-background);
     backdrop-filter: blur(10px);
 }
