@@ -62,7 +62,7 @@ header nav {
 
 header nav a {
     text-decoration: none;
-    color: var(--white-tone);
+    color: #000000;
     padding: 1rem 4rem;
     text-align: center;
     background-color: var(--accent-1-color);
