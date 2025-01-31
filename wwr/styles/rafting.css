@@ -150,6 +150,10 @@ p, nav a {
     grid-column: 1/6;
 }
 
+.gallery figure {
+    text-align: center;
+}
+
 /* footer */
 
 footer {
