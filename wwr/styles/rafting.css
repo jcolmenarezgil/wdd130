@@ -34,6 +34,7 @@ body {
     position: absolute;
     left: 50%;
     transform: translate(-50%);
+    font-family: var(--body-font-family);
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -96,6 +97,132 @@ p, nav a {
     width: 100%;
     text-align: center;
     background-color: var(--primary-background);
+}
+
+.margin-bottom {
+    margin-bottom: 1rem;
+}
+
+/* contact-grid */
+
+.contact-grid {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: 1fr 1.3fr;
+    grid-template-rows: auto 400px;
+
+}
+
+.contact-grid .information > *{
+    padding: 1rem;
+    background: var(--primary-background);
+}
+
+.contact-grid .c-form {
+    grid-row-start: 1;
+    grid-column-start: 2;
+    grid-row-end: 3;
+    grid-column-end: 3;
+}
+
+.contact-grid .our-bastion {
+    grid-row-start: 3;
+    grid-column-start: 1;
+    grid-row-end: 4;
+    grid-column-end: 3;
+
+    text-align: center;
+}
+
+.contact-grid .our-bastion .team {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+
+form {
+    width: auto;
+    margin: 0 auto;
+    padding: 1rem;
+    border: 1px solid rgb(0 0 0 / 0.1);
+    border-radius: 0.5rem;
+    background-color: #eee;
+    display: grid;
+}
+
+fieldset {
+    display: grid;
+    grid-gap: .5rem;
+    margin: 1rem;
+    border: 1px solid rgb(0, 0, 0 / 0.2);
+    padding: 1rem;
+}
+
+legend {
+    padding: 0.5rem;
+    color: navy;
+    font-size: 1.3em;
+}
+
+label, input, button, select, textarea {
+    font-family: Roboto, Arial, sans-serif;
+}
+
+label {
+    text-align: left;
+    padding-right: 1rem;
+}
+
+input, select, textarea {
+    padding: 0.5rem;
+    font-size: 1.1rem;
+}
+
+input[type="checkbox"], input[type="radio"] {
+    width: 22px;
+    height: 22px;
+    vertical-align: bottom;
+}
+
+input[type="checkbox"]:hover, input[type="radio"]:hover, label {
+    cursor: pointer;
+}
+
+input[type="submit"] {
+    background-color: var(--secondary-color);
+    border: 0;
+    box-shadow: 12px 12px 2px 1px var(--dark-tone);
+    color: var(--white-tone);
+}
+
+button {
+    margin: 1rem;
+    background-color: navy;
+    color: #fff;
+    border: none;
+    border-radius: .5rem;
+    padding: .75rem;
+    font-size: 1.2rem;
+}
+
+button:hover {
+    background-color: darkgreen;
+}
+
+.form-item {
+    display: flex;
+    flex-direction: column;
+}
+
+.radio-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.radio-group .radio-item {
+    padding: 0.5em;
 }
 
 /* hero article */
