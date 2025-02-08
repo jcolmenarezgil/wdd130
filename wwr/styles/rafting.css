@@ -190,18 +190,12 @@ input[type="checkbox"]:hover, input[type="radio"]:hover, label {
     cursor: pointer;
 }
 
-input[type="submit"] {
-    background-color: var(--secondary-color);
+button {
+    background-color: navy;
     border: 0;
     box-shadow: 12px 12px 2px 1px var(--dark-tone);
     color: var(--white-tone);
-}
-
-button {
     margin: 1rem;
-    background-color: navy;
-    color: #fff;
-    border: none;
     border-radius: .5rem;
     padding: .75rem;
     font-size: 1.2rem;
