@@ -30,10 +30,10 @@
 }
 
 body {
-    max-width: 1024px;
-    position: absolute;
-    left: 50%;
-    transform: translate(-50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
     font-family: var(--body-font-family);
 }
 
@@ -46,12 +46,14 @@ header {
     display: grid;
     grid-template-columns: auto 1fr;
     align-items: center;
-    margin-bottom: 15px;
+    z-index: 100;
 }
 
 header img {
     width: 150px;
     height: auto;
+    margin-right: -15px;
+    z-index: 99;
 }
 
 header nav {
@@ -68,6 +70,16 @@ header nav a {
     text-align: center;
     background-color: var(--accent-1-color);
     font-weight: bolder;
+    min-width: 120px;
+}
+
+header nav a:hover {
+    background-color: var(--accent-2-color);
+}
+
+header nav a:last-child {
+    border-bottom-right-radius: 25px;
+    border-top-right-radius: 25px;
 }
 
 p, nav a {
@@ -101,6 +113,30 @@ p, nav a {
 
 .margin-bottom {
     margin-bottom: 1rem;
+}
+
+/* hero > article */
+
+.hero article {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%);
+    width: 80%;
+    background-color: var(--secondary-background);
+    backdrop-filter: blur(10px);
+    padding-left: 10px;
+}
+
+.hero article p {
+    padding: 15px;
+    clear: none;
+    color: var(--dark-tone);
+}
+
+.hero article img {
+    float: right;
+    padding: 5px;
 }
 
 /* contact-grid */
@@ -219,33 +255,10 @@ button:hover {
     padding: 0.5em;
 }
 
-/* hero article */
-
-.hero article {
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%);
-    width: 80%;
-    background-color: var(--secondary-background);
-    backdrop-filter: blur(10px);
-}
-
-.hero article p {
-    padding: 15px;
-    clear: none;
-    color: var(--dark-tone);
-}
-
-.hero article img {
-    float: right;
-    padding: 5px;
-}
-
 /* history */
 
 .history {
-    padding: 1rem 0 1rem 0;
+    padding: 1rem;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     justify-items: center;
@@ -283,6 +296,7 @@ footer {
     align-items: center;
     justify-content: space-around;
     padding: 1rem;
+    width: 100%;
 }
 
 footer nav a {
@@ -292,4 +306,13 @@ footer nav a {
 footer nav a img {
     width: 48px;
     height: auto;
+}
+
+/* wireframe */
+
+.wireframe {
+    padding: 0.5em;
+    background-color: var(--accent-2-color);
+    text-decoration: none;
+    border-radius: 15px;
 }
