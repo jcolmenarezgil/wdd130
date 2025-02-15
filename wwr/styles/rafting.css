@@ -536,9 +536,5 @@ footer nav a img {
     background-color: var(--accent-2-color);
     text-decoration: none;
     border-radius: 15px;
-}
-
-.wireframe a {
-    text-decoration: none;
     color: var(--black-tone);
 }
