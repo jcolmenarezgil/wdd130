@@ -46,6 +46,10 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: var(--heading-font-weight);
 }
 
+p {
+    text-indent: 50px;
+}
+
 /* header */
 
 header {
@@ -369,6 +373,10 @@ p, nav a {
 .contact-grid .information > *{
     padding: 1rem;
     background: var(--primary-background);
+}
+
+.contact-grid .information p {
+    text-indent: 0px !important;
 }
 
 .contact-grid .c-form {
