@@ -304,7 +304,7 @@ p, nav a {
     transform: rotate(90deg);
     background: var(--secondary-background);
     bottom: 100%;
-    color: #fff;
+    color: var(--black-tone);
     display: block;
     left: 50px;
     margin-bottom: 15px;
